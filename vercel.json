@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/chapmanganato-img.js",
+      "src": "server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/chapmanganato-img",
-      "dest": "/api/chapmanganato-img.js"
+      "src": "/api/(.*)",
+      "dest": "/server.js"
     }
   ]
 }
